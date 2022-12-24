@@ -4,6 +4,12 @@
 {% if object_list %}
 <h3>All my lists</h3>
 {% endif %}
+<p>
+    <input
+    value="Add a new list"
+    type="button"
+    onclick="location.href='{% url "list-add" %}'"/>
+    </p>
 <ul>
 {% for todolist in object_list %}
 <li>
